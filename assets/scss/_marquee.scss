@@ -1,0 +1,199 @@
+.scrolling-wrap {
+	overflow: hidden;
+	white-space: nowrap;
+	display: flex;
+	gap: 20px;
+    background: #222226;
+    padding: 40px 0;
+
+	.comm {
+		display: flex;
+		align-items: center;
+		animation: scroll 40s linear infinite;
+		gap: 30px;
+		cursor: pointer;
+		.cmn-textslide {
+			font-size: 120px;
+			font-weight: 900;
+			line-height: 92%;
+			text-transform: uppercase;
+            color: $white;
+		}
+	}
+
+	&:hover {
+		.comm {
+			animation-play-state: paused;
+		}
+	}
+	@include breakpoint (max-lg) {
+		.comm {
+			gap: 20px;
+			.cmn-textslide {
+				font-size: 90px;
+				line-height: 100px;
+			}
+			img {
+				width: 70px;
+			}
+		}
+	}
+
+	@include breakpoint (max-sm) {
+		.comm {
+			gap: 20px;
+			.cmn-textslide {
+				font-size: 60px;
+				line-height: 65px;
+			}
+			img {
+				width: 70px;
+			}
+		}
+	}
+}
+
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes scroll2 {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-200%);
+	}
+}
+
+
+
+//test slide version two
+.digital-marketing {
+	overflow: hidden;
+	white-space: nowrap;
+	display: flex;
+	gap: 20px;
+	.comm {
+		display: flex;
+		align-items: center;
+		animation: scroll 40s linear infinite;
+		gap: 30px;
+		cursor: pointer;
+		.cmn-textslide {
+			font-size: 80px;
+			font-weight: 600;
+			line-height: 110px;
+			opacity: 25%;
+			transition: all 0.5s;
+			text-transform: capitalize;
+			.serial-badge {
+				padding: 7px 15px;
+				width: 80px;
+				line-height: initial;
+				font-size: 16px;
+				border: 1px solid #454750;
+				border-radius: 100px;
+				gap: 10px !important;
+				text-align: center;
+
+				i {
+					transform: rotate(-40deg);
+					color: $theme-color;
+				}
+			}
+			.digital-thumb {
+				max-width: 330px;
+				max-height: 235px;
+				margin: -150px auto 0;
+				transform: scale(0);
+				visibility: hidden;
+				transition: all 0.6s;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&:hover {
+				opacity: 1;
+				.digital-thumb {
+					transform: scale(1);
+					visibility: visible;
+				}
+			}
+		}
+	}
+	@include breakpoint (max-xl) {
+		.comm {
+			display: flex;
+			align-items: center;
+			animation: scroll 40s linear infinite;
+			gap: 30px;
+			cursor: pointer;
+			.cmn-textslide {
+				font-size: 48px;
+				line-height: 110px;
+				.digital-thumb {
+					max-width: 230px;
+					max-height: 235px;
+					margin: -150px auto 0;
+				}
+			}
+		}
+	}
+	@include breakpoint (max-lg) {
+		.comm {
+			gap: 16px;
+			cursor: pointer;
+			.cmn-textslide {
+				font-size: 36px;
+				.digital-thumb {
+					max-width: 170px;
+					max-height: 105px;
+					margin: -100px auto 0;
+				}
+			}
+		}
+	}
+}
+.text-slie-reverse {
+	.comm {
+		display: flex;
+		align-items: center;
+		animation: scroll 80s linear infinite;
+	}
+}
+//test slide version two
+
+//test slide version three
+.digital-software {
+	.comm {
+		.cmn-textslide {
+			font-size: 40px;
+			font-weight: 700;
+			line-height: 58px;
+		}
+		img {
+			width: 65px;
+		}
+	}
+	@include breakpoint (max-sm) {
+		.comm {
+			.cmn-textslide {
+				font-size: 30px;
+				font-weight: 700;
+				line-height: 58px;
+			}
+			img {
+				width: 55px;
+			}
+		}
+	}
+}
+//test slide version three

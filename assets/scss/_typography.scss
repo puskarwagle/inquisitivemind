@@ -1,0 +1,141 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+$heading-font: 'Satoshi Variable', sans-serif;
+$heading-font-2: 'Marcellus', sans-serif;
+$heading-font-3: 'Plus Jakarta Sans', sans-serif;
+$heading-font-4: 'Syncopate', sans-serif;
+$heading-font-5: 'Urbanist', sans-serif;
+$body-font: "Satoshi Variable", sans-serif;
+
+
+//font-family: "Font Awesome 6 Free";
+$fa: "Font Awesome 6 Pro";
+
+body {
+    font-family: $body-font;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: $text-color;
+    background-color: $white;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+	padding: 0;
+}
+
+input:focus{
+	color: $white;
+	outline: none;
+}
+
+input{
+	color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+    margin: 0px;
+	padding: 0;
+    color: $white;
+	text-transform: capitalize;
+	@include transition;
+}
+
+h1 {
+	font-size: 150px;
+	font-weight: 900;
+	line-height: 95%;
+}
+
+h2 {
+	font-size: 65px;
+	line-height: 116%;
+	font-weight: 700;
+
+	@include breakpoint(max-lg){
+		font-size: 55px;
+	}
+
+	@include breakpoint(max-md){
+		font-size: 45px;
+	}
+
+	@include breakpoint(max-sm){
+		font-size: 36px;
+	}
+
+	@include breakpoint(max-xxs){
+		font-size: 30px;
+	}
+}
+
+h3 {
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 134%;
+
+	@include breakpoint(max-sm){
+		font-size: 20px;
+	}
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 130%;
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 145%;
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+    cursor: pointer;
+    color: $white;
+	@include transition;
+}
+
+p {
+    margin: 0px;
+	@include transition;
+}
+
+span {
+	margin: 0px;
+	@include transition;
+}
+

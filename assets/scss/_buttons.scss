@@ -1,0 +1,179 @@
+//>>>>> Component Button Here <<<<<//
+.theme-btn {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none !important;
+    color: $theme-color;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 22px 40px;
+    transition: 0.5s ease-in-out;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1;
+    border-radius: 30px;
+    border: 1px solid rgba(207, 208, 212, 0.20);
+    background: #1D1D21;
+
+    &::after {
+        content: "";
+        background-color: $theme-color;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        clip-path: circle(0% at 50% 50%);
+        transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.8s;
+        z-index: -1;
+    }
+
+
+    i {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        //background-color: $theme-color;
+        color: $header-color;
+
+        &::after {
+            clip-path: circle(100% at 50% 50%);
+            transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 4s;
+        }
+    }
+
+
+    @include breakpoint (max-md){
+        padding: 20px 32px;
+    }
+
+    @include breakpoint (max-sm){
+        padding: 18px 30px;
+        font-size: 14px;
+    }
+
+    &.theme-btn-2 {
+        background-color: $theme-color-2;
+        color: $white;
+        font-size: 17px;
+        font-weight: 700;
+
+        &::before,&::after {
+            background-color: $header-color-2;
+        }
+    }
+    &.theme-btn-3 {
+        background-color: $theme-color-3;
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+
+        &::before,&::after {
+            background-color: #0153cf;
+        }
+    }
+    &.bt-white-outline{
+        background-color: transparent;
+        color: $white;
+        border-radius: 100px;
+        &:hover{
+            &::after{
+                background-color: $theme-color-3;
+            }
+        }
+    }
+
+    &.style-2 {
+        border-radius: 10px;
+        background-color: $theme-color;
+        color: $header-color;
+
+        &::before,&::after {
+            background: #1D1D21;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &.style-6 {
+        margin-top: 48px;
+        background-color: $theme-color-6;
+        color: $white;
+        border-radius: 10px;
+
+        @include breakpoint (max-xl) {
+            margin-top: 30px;
+        }
+        
+        &::after {
+            background: $header-color;
+        }
+
+        &:hover {
+            border: 1px solid $header-color;
+        }
+    }
+
+    &.style-5 {
+        background-color: transparent;
+        color: $white;
+
+        &::after {
+            background-color: $theme-color-5;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+     &.style-7 {
+        background-color: transparent;
+        color: $white;
+
+        &::after {
+            background-color: $theme-color-6;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+     &.style-8 {
+        background-color: transparent;
+        color: $white;
+
+        &::after {
+            background-color: $theme-color-3;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+
+.link-btn {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $text-color;
+
+    &:hover {
+        color: $theme-color;
+    }
+}
+
+
+//>>>>> Component Button End <<<<<//

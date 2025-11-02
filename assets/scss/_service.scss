@@ -1,0 +1,265 @@
+.service-box-items {
+    margin-top: 30px;
+    @include flex;
+    gap: 15px;
+
+    @include breakpoint (max-md){
+        flex-wrap: wrap;
+    }
+
+    .service-image {
+        max-width: 260px;
+
+        @include breakpoint (max-md){
+            max-width: 600px;
+            margin-bottom: 24px;
+        }
+
+        img {
+            @include imgw;
+            border-radius: 20px;
+        }
+    }
+
+    .service-content {
+        border-radius: 25px;
+        border: 1px solid rgba(207, 208, 212, 0.20);
+        background: #1D1D21;
+        padding: 50px;
+        max-width: 370px;
+        
+        @include breakpoint (max-md){
+            max-width: 600px;
+        }
+
+        h3 {
+            margin-bottom: 15px;
+
+            a {
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.service-box-items-2 {
+    margin-top: 30px;
+    padding: 45px 35px;
+    background-color: #F2F7FE;
+    border-radius: 20px;
+    border: 1px solid #DBE8FC;
+
+    .icon {
+        width: 74px;
+        height: 78px;
+        background-color: #E0EAFA;
+        border-radius: 50%;
+
+        img {
+            margin-left: 22px;
+            margin-top: 10px;
+        }
+    }
+
+    .content {
+        margin-top: 20px;
+
+        h3 {
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: $header-color-2;
+        }
+
+        p {
+            color: $text-color-2;
+        }
+    }
+}
+
+.service-image-2 {
+    margin-top: 30px;
+    
+    img {
+        @include imgw;
+        border-radius: 20px;
+    }
+}
+
+.popular-service-items {
+    margin-top: 30px;
+    text-align: right;
+    border-bottom: 1px solid #E0E1E5;
+    padding-bottom: 30px;
+
+    @include breakpoint (max-xl){
+        text-align: left;
+    }
+
+    .icon {
+        text-align: right;
+        display: inline-block;
+        position: relative;
+
+        @include breakpoint (max-xl){
+            text-align: left;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            width: 74px;
+            height: 78px;
+            border-radius: 50%;
+            background-color: #E0EAFA;
+            z-index: -1;
+        }
+
+        img {
+            margin-right: 20px;
+        }
+    }
+
+    .content {
+        margin-top: 30px;
+
+        h3 {
+            font-size: 27px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: $header-color-2;
+        }
+
+        p {
+            max-width: 310px;
+            color: $text-color-2;
+            text-align: right;
+            display: inline-block;
+
+            @include breakpoint (max-xl){
+                text-align: left;
+            }
+        }
+    }
+
+    &.style-2 {
+        border: none;
+        padding-bottom: 0;
+
+       .content {
+            margin-top: 0;
+            margin-bottom: 30px;
+       }
+    }
+
+    &.style-3 {
+        text-align: left;
+
+        .icon {
+            img {
+                margin-left: 20px;
+                margin-right: 0;
+            }
+
+            &::before {
+                left: 0;
+                right: initial;
+            }
+        }
+
+        .content {
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.popular-service-image {
+    margin-top: 30px;
+    padding: 72px 0;
+    text-align: center;
+    background-color: #F2F7FE;
+    border-radius: 30px;
+}
+
+.service-left-items {
+    margin-right: 80px;
+
+    @include breakpoint (max-xl){
+       margin-right: 0;
+    }
+}
+
+.service-right-items {
+    margin-left: 80px;
+
+    @include breakpoint (max-xl){
+        margin-left: 0;
+    }
+}
+
+.service-section {
+    &.style-padding {
+        @include breakpoint (max-xl){
+            padding-top: 120px;
+        }
+    }
+}
+
+
+.offer-box-items{
+    .offer-image{
+        position: relative;
+        .img-box{
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.48);
+            backdrop-filter: blur(6px);
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            visibility: hidden;
+            transform: all 0.5s;
+        }
+    }
+    &:hover{
+        .offer-image{
+            .img-box{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+
+.form-newletter4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(max-md){
+        button{
+            font-size: 11px !important;
+            min-width: 120px;
+            width: 120px;
+            padding: 12px 13px !important;
+        }
+    }
+}
+.w-190{
+    width: 190px;
+    min-width: 170px;
+}

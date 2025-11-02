@@ -1,0 +1,40 @@
+
+:root {
+    
+    --body: #fff;
+    --black: #000;
+    --white: #fff;
+    --theme: #EFFB53;
+    --theme2: #514DE0;
+    --theme3: #0D6DFD;
+    --theme5: #F16319;
+    --theme6: #FF9960;
+    --header: #151518;
+    --header2: #072032;
+    --text: #CDCDCD;
+    --text2: #5C6972;
+    --border: #2A2A2A;
+    --body-bg: #151518;
+    --bg: #1A1A1E;
+    --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+
+    --secondary-clr: #F2F2F2;
+}
+
+// Theme Color - Defualt Colors
+$black: var(--black);
+$white: var(--white);
+$theme-color: var(--theme);
+$theme-color-2: var(--theme2);
+$theme-color-3: var(--theme3);
+$theme-color-5: var(--theme5);
+$theme-color-6: var(--theme6);
+$text-color: var(--text);
+$text-color-2: var(--text2);
+$header-color: var(--header);
+$header-color-2: var(--header2);
+$border-color: var(--border);
+$body-bg: var(--body-bg);
+$bg-color: var(--bg);
+$shadow: var(--box-shadow);
+$secondary-clr: var(--secondary-clr);

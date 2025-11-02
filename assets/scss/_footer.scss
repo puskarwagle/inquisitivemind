@@ -1,0 +1,770 @@
+.footer-widgets-wrapper {
+	padding: 90px 0 120px;
+	position: relative;
+	z-index: 9;
+
+	@include breakpoint(max-xl) {
+		padding: 70px 0 100px;
+	}
+
+	@include breakpoint(max-lg) {
+		padding: 50px 0 80px;
+	}
+
+	.single-footer-widget {
+		margin-top: 30px;
+
+		.widget-head {
+			margin-bottom: 30px;
+
+			@include breakpoint(max-sm) {
+				margin-bottom: 20px;
+			}
+
+			h3 {
+				font-weight: bold;
+				color: $white;
+				font-size: 24px;
+				display: inline-block;
+				text-transform: capitalize;
+
+				@include breakpoint(max-md) {
+					font-size: 22px;
+				}
+
+				@include breakpoint(max-sm) {
+					font-size: 20px;
+				}
+			}
+		}
+
+		.footer-content {
+			h3 {
+				font-size: 55px;
+				font-weight: 700;
+				color: $white;
+
+				@include breakpoint(max-xl) {
+					font-size: 48px;
+				}
+
+				@include breakpoint(max-sm) {
+					font-size: 35px;
+				}
+			}
+
+			.footer-input {
+				position: relative;
+				margin-top: 30px;
+				@include flex;
+				gap: 15px;
+
+				input {
+					outline: none;
+					width: 100%;
+					color: #cdcdcd;
+					border: none;
+					font-size: 16px;
+					border-radius: 30px;
+					border: 1px solid #cfd0d4;
+					opacity: 0.2;
+					background: rgba(217, 217, 217, 0);
+					padding: 16px 30px;
+
+					&::placeholder {
+						color: #cdcdcd !important;
+					}
+				}
+			}
+		}
+
+		.list-items {
+			li {
+				text-transform: capitalize;
+				background-image: linear-gradient($theme-color, $theme-color);
+				background-position: 0 95%;
+				background-repeat: no-repeat;
+				background-size: 0% 1px;
+				display: table;
+				@include transition;
+				position: relative;
+
+				&::before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					content: "\f061";
+					font-family: $fa;
+					opacity: 0;
+					visibility: hidden;
+					@include transition;
+				}
+
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+
+				a {
+					font-size: 18px;
+					color: $text-color;
+					position: relative;
+				}
+
+				&:hover {
+					background-size: 100% 1px;
+
+					&::before {
+						opacity: 1;
+						visibility: visible;
+						color: $theme-color;
+					}
+
+					a {
+						padding-left: 25px;
+						color: $theme-color;
+					}
+				}
+			}
+		}
+
+		.footer-thumb {
+			position: relative;
+			//max-width: 130px;
+
+			&::before {
+				@include before;
+				background-color: $black;
+				border-radius: 10px;
+				@include transition;
+				opacity: 0;
+				visibility: visible;
+			}
+
+			img {
+				@include imgw;
+				border-radius: 10px;
+			}
+
+			.icon {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 25px;
+				@include transition;
+				opacity: 0;
+				visibility: visible;
+			}
+
+			&:hover {
+				&::before {
+					opacity: 0.6;
+					visibility: visible;
+				}
+
+				.icon {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+
+	&.style-2 {
+		.single-footer-widget {
+			.widget-head {
+				h3 {
+					color: $header-color-2;
+				}
+			}
+
+			.footer-content {
+				p {
+					font-weight: 500;
+					color: $text-color-2;
+				}
+
+				.social-icon {
+					@include flex;
+					gap: 8px;
+					margin-top: 40px;
+
+					a {
+						display: inline-block;
+						width: 48px;
+						height: 48px;
+						line-height: 48px;
+						text-align: center;
+						border-radius: 50%;
+						border: 1px solid #e8e7e4;
+						color: $text-color-2;
+
+						&:hover {
+							color: $white;
+							background-color: $theme-color-2;
+						}
+					}
+				}
+
+				.footer-input-2 {
+					position: relative;
+					margin-top: 30px;
+					margin-bottom: 20px;
+
+					input {
+						outline: none;
+						width: 100%;
+						border-radius: 10px;
+						border: 1px solid #e8e7e4;
+						color: $text-color-2;
+						background-color: $white;
+						font-size: 16px;
+						padding: 20px 25px;
+
+						&::placeholder {
+							color: $text-color-2;
+						}
+					}
+
+					.newsletter-btn {
+						background-color: #2a2a2a;
+						width: 60px;
+						height: 60px;
+						line-height: 60px;
+						display: inline-block;
+						text-align: center;
+						border-radius: 4px;
+						color: $white;
+						position: absolute;
+						background-color: $theme-color-2;
+						top: 5px;
+						right: 6px;
+					}
+				}
+			}
+
+			.list-items {
+				li {
+					background-image: linear-gradient(
+						$theme-color-2,
+						$theme-color-2
+					);
+
+					a {
+						color: $text-color-2;
+					}
+
+					&:hover {
+						&::before {
+							color: $theme-color-2;
+						}
+
+						a {
+							color: $theme-color-2;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style-5 {
+
+		.single-footer-widget {
+
+			.widget-head {
+
+				h3 {
+					font-family: $heading-font-3;
+					color: $header-color;
+				}
+			}
+			.footer-content {
+				h5 {
+					font-family: $heading-font-3;
+					color: $header-color;
+					margin-bottom: 24px;
+				}
+
+				.footer-input-5 {
+					position: relative;
+					@include flex;
+					gap: 15px;
+					width: 100%;
+
+					input {
+						outline: none;
+						width: 100%;
+						color: $text-color-2;
+						border: none;
+						font-size: 16px;
+						border-radius: 0;
+						border: 1px solid rgba(92, 105, 114, 0.24);
+						background: #F2F7FE;
+						padding: 16px 20px;
+
+						&::placeholder {
+							color: $text-color-2 !important;
+						}
+					}
+
+					.newsletter-btn {
+						color: $text-color-2;
+						position: absolute;
+						top: 16px;
+						right: 20px;
+					}
+				}
+			}
+
+			.list-items {
+				li {
+					font-size: 18px;
+					font-weight: 400;
+					background-image: linear-gradient($theme-color-5, $theme-color-5);
+
+					a {
+						color: $text-color-2;
+					}
+
+					&:hover {
+						color: $theme-color-5 !important;
+
+						&::before {
+							opacity: 1;
+							visibility: visible;
+							color: $theme-color-5 !important;
+						}
+
+						a {
+							padding-left: 25px;
+							color: $theme-color-5 !important;
+						}
+					}
+				}
+			}
+
+			.contact-list {
+				li {
+					color: $text-color-2;
+
+					&:not(:last-child) {
+						margin-bottom: 10px;
+					}
+
+					a {
+						color: $text-color-2;
+					}
+				}
+			}
+		}
+	}
+
+	&.style-6 {
+
+		.single-footer-widget {
+
+			.widget-head {
+
+				h3 {
+					font-family: $heading-font-5;
+					font-size: 24px;
+
+					a {
+						color: $white;
+					}
+				}
+			}
+
+			.footer-content {
+				h4 {
+					font-size: 20px;
+					font-weight: 500;
+					font-family: $heading-font-5;
+					margin-bottom: 24px;
+					color: rgba(255, 255, 255, 0.7);
+
+					a {
+						color: rgba(255, 255, 255, 0.7);
+					}
+				}
+
+				.social-profile {
+					@include flex;
+					gap: 16px;
+					margin-top: 30px;
+
+					a {
+						width: 48px;
+						height: 48px;
+						line-height: 48px;
+						text-align: center;
+						display: inline-block;
+						color: $white;
+						border-radius: 100px;
+						background: rgba(255, 255, 255, 0.08);
+						backdrop-filter: blur(16px);
+
+						&:hover {
+							background-color: $theme-color-6;
+						}
+					}
+				}
+			}
+
+			.list-items {
+				li {
+					font-size: 16px;
+					font-weight: 400;
+					background-image: linear-gradient($theme-color-6, $theme-color-6);
+
+					a {
+						 color: rgba(255, 255, 255, 0.7);
+					}
+
+					&:hover {
+						color: $theme-color-6 !important;
+
+						&::before {
+							opacity: 1;
+							visibility: visible;
+							color: $theme-color-6 !important;
+						}
+
+						a {
+							padding-left: 25px;
+							color: $theme-color-6 !important;
+						}
+					}
+				}
+			}
+
+			.newsletter-content {
+				h3 {
+					font-family: $heading-font-5;
+					margin-bottom: 30px;
+					font-size: 32px;
+
+					@include breakpoint (max-md) {
+						font-size: 28px;
+					}
+				}
+
+				p {
+					font-size: 16px;
+					margin-bottom: 48px;
+					color: rgba(255, 255, 255, 0.7);
+					max-width: 577px;
+				}
+
+				.footer-input-6 {
+					position: relative;
+					@include flex;
+					gap: 15px;
+					width: 100%;
+					max-width: 577px;
+
+					input {
+						outline: none;
+						width: 100%;
+						color: #5D6063;
+						border: none;
+						font-size: 16px;
+						border-radius: 100px;
+						background: #F2F7FE;
+						padding: 16px 20px;
+
+						&::placeholder {
+							color: #5D6063 !important;
+						}
+					}
+
+					.newsletter-btn {
+						color: $white;
+						position: absolute;
+						top: 0;
+						right: 0;
+						height: 60px;
+						width: 89px;
+						background-color: $theme-color-6;
+						border-radius: 0px 100px 100px 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.social-icon-custom {
+	@include flex;
+	gap: 8px;
+
+	a {
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		line-height: 48px;
+		text-align: center;
+		border-radius: 50%;
+		border-radius: 100px;
+        background-color: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(16px);
+		color: $white;
+
+		&:hover {
+			color: $white;
+			background-color: $theme-color-2;
+		}
+	}
+}
+
+.footer-bottom {
+	padding: 30px 0;
+	border-top: 1px solid rgba(207, 208, 212, 0.15);
+
+	.footer-bottom-wrapper {
+		@include flex;
+		justify-content: space-between;
+
+		@include breakpoint(max-lg) {
+			flex-wrap: wrap;
+			gap: 20px;
+			justify-content: center;
+			text-align: center;
+		}
+	}
+
+	p {
+		color: $text-color;
+
+		a {
+			color: $theme-color;
+			font-weight: 400;
+			text-decoration: underline;
+		}
+	}
+
+	.social-icon {
+		@include flex;
+		gap: 8px;
+
+		a {
+			display: inline-block;
+			width: 48px;
+			height: 48px;
+			line-height: 48px;
+			text-align: center;
+			border-radius: 50%;
+			border: 1px solid #cfd0d4;
+			color: #cdcdcd;
+
+			&:hover {
+				color: $theme-color;
+			}
+		}
+	}
+
+	&.style-2 {
+		border-top: 1px solid #e8e7e4;
+
+		p {
+			color: #5c6972;
+		}
+
+		.footer-menu {
+			@include flex;
+			gap: 10px;
+
+			li {
+				font-size: 18px;
+				color: $text-color-2;
+				font-weight: 500;
+
+				a {
+					color: $text-color-2;
+
+					&:hover {
+						color: $theme-color-2;
+					}
+				}
+			}
+		}
+	}
+	&.style-4 {
+		border-top: 1px dashed #888a8d;
+		p {
+			font-size: 16px;
+			color: $white;
+		}
+		.online-payment {
+			max-width: 356px;
+			img {
+				width: 100%;
+			}
+		}
+		ul {
+			gap: 2px 24px;
+			li {
+				a {
+					font-size: 16px;
+					color: $white;
+				}
+			}
+		}
+	}
+}
+.social-icon {
+	a {
+		border: unset !important;
+		border-radius: 100px;
+		background: rgba(255, 255, 255, 0.08);
+		backdrop-filter: blur(16px);
+		i {
+			color: $white;
+		}
+	}
+}
+
+.fs-16 {
+	font-size: 16px !important;
+}
+.white-70 {
+	color: rgb(255, 255, 255, 70%);
+}
+.footer-input4 {
+	border-radius: 100px;
+	overflow: hidden;
+	input {
+		padding: 12px 20px !important;
+		height: 56px !important;
+	}
+	button {
+		width: 64px;
+		height: 64px;
+		top: 0 !important;
+		right: 0 !important;
+	}
+}
+
+.footer-section {
+	position: relative;
+
+	.circle-shape {
+		position: absolute;
+		top: 25%;
+		left: 60px;
+
+		@include breakpoint(max-xxl) {
+			display: none;
+		}
+	}
+
+	.circle-shape-2 {
+		position: absolute;
+		top: -125px;
+		right: 30px;
+		animation: rounded 5s linear infinite;
+
+		@include breakpoint(max-xxl) {
+			display: none;
+		}
+	}
+}
+
+/*Footer 4*/
+.batter-information {
+	padding: 48px 0;
+	gap: 80px;
+	border-bottom: 1px solid rgb(255, 255, 255, 0.24);
+	.line {
+		width: 2px;
+		height: 80px;
+		opacity: 0.24;
+		background: #fff;
+	}
+	@include breakpoint(max-xl) {
+		gap: 24px;
+		padding: 25px 0;
+		img {
+			width: 60px;
+		}
+		h3 {
+			font-size: 20px;
+			line-height: 28px;
+		}
+	}
+}
+
+.footer-bottom-5 {
+	border-top: 1px solid rgba(92, 105, 114, 0.24);
+	padding: 30px 0;
+
+	.footer-bottom-wrapper {
+		@include flex;
+		justify-content: space-between;
+
+		@include breakpoint (max-xl) {
+				flex-wrap: wrap;
+				gap: 30px;
+		}
+
+		p {
+			color: $text-color-2;
+
+			span {
+				color: $header-color;
+			}
+		}
+
+		.footer-menu {
+			gap: 30px;
+
+			@include breakpoint (max-xl) {
+				flex-wrap: wrap;
+			}
+
+			li {
+				a {
+					color: $text-color-2;
+				}
+
+				&.style-5 {
+					position: relative;
+
+					&::before {
+						@include before;
+						width: 1.5px;
+						height: 10px;
+						background-color: $text-color-2;
+						top: 10px;
+						left: -17px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-bottom-6 {
+	border-top: 1px solid rgba(255, 255, 255, 0.16);
+	padding: 30px 0;
+
+	.footer-bottom-wrapper {
+		@include flex;
+		justify-content: space-between;
+
+		@include breakpoint (max-md) {
+			flex-wrap: wrap;
+			gap: 30px;
+		}
+
+		p {
+			font-size: 16px;
+			color: #CDCDCD;
+
+			span {
+				color: $theme-color-6;
+			}
+		}
+	}
+}
