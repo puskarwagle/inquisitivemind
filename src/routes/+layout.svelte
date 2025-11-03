@@ -9,13 +9,13 @@
 	<div class="animation-preloader">
 		<div class="spinner"></div>
 		<div class="txt-loading">
-			<span data-text-preloader="A" class="letters-loading">A</span>
-			<span data-text-preloader="I" class="letters-loading">I</span>
-			<span data-text-preloader="F" class="letters-loading">F</span>
+			<span data-text-preloader="J" class="letters-loading">J</span>
 			<span data-text-preloader="O" class="letters-loading">O</span>
-			<span data-text-preloader="R" class="letters-loading">R</span>
-			<span data-text-preloader="G" class="letters-loading">G</span>
-			<span data-text-preloader="E" class="letters-loading">E</span>
+			<span data-text-preloader="B" class="letters-loading">B</span>
+			<span data-text-preloader="F" class="letters-loading">F</span>
+			<span data-text-preloader="L" class="letters-loading">L</span>
+			<span data-text-preloader="O" class="letters-loading">O</span>
+			<span data-text-preloader="W" class="letters-loading">W</span>
 		</div>
 		<p class="text-center">Loading</p>
 	</div>
@@ -54,7 +54,7 @@
 					</div>
 				</div>
 				<p class="text d-none d-xl-block">
-					Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+					JobFlow automates your entire job search. Apply to hundreds of jobs with AI-generated cover letters, tailored resumes, and automated applications across LinkedIn, Indeed, and Seek.
 				</p>
 				<div class="mobile-menu fix mb-3"></div>
 				<div class="offcanvas__contact">
@@ -62,23 +62,23 @@
 					<ul>
 						<li class="d-flex align-items-center">
 							<div class="offcanvas__contact-icon"><i class="fal fa-map-marker-alt"></i></div>
-							<div class="offcanvas__contact-text"><a target="_blank" href="/contact">Main Street, Melbourne, Australia</a></div>
+							<div class="offcanvas__contact-text"><a target="_blank" href="/contact">Remote-first company</a></div>
 						</li>
 						<li class="d-flex align-items-center">
 							<div class="offcanvas__contact-icon mr-15"><i class="fal fa-envelope"></i></div>
-							<div class="offcanvas__contact-text"><a href="mailto:info@example.com">info@example.com</a></div>
+							<div class="offcanvas__contact-text"><a href="mailto:hello@inquisitivemind.tech">hello@inquisitivemind.tech</a></div>
 						</li>
 						<li class="d-flex align-items-center">
-							<div class="offcanvas__contact-icon mr-15"><i class="fal fa-clock"></i></div>
-							<div class="offcanvas__contact-text"><span>Mon-Friday, 09am -05pm</span></div>
+							<div class="offcanvas__contact-icon mr-15"><i class="fab fa-discord"></i></div>
+							<div class="offcanvas__contact-text"><a href="#0">Join our Discord</a></div>
 						</li>
 						<li class="d-flex align-items-center">
-							<div class="offcanvas__contact-icon mr-15"><i class="far fa-phone"></i></div>
-							<div class="offcanvas__contact-text"><a href="tel:+11002345909">+11002345909</a></div>
+							<div class="offcanvas__contact-icon mr-15"><i class="far fa-download"></i></div>
+							<div class="offcanvas__contact-text"><a href="/download">Download JobFlow</a></div>
 						</li>
 					</ul>
 					<div class="header-button mt-4">
-						<a href="/contact" class="theme-btn text-center">Get A Quote</a>
+						<a href="/download" class="theme-btn text-center">Download Free</a>
 					</div>
 					<div class="social-icon d-flex align-items-center">
 						<a href="#0" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -109,17 +109,20 @@
 							<nav id="mobile-menu">
 								<ul>
 									<li><a href="/">Home</a></li>
-									<li><a href="/about">About Us</a></li>
+									<li><a href="/how-it-works">How It Works</a></li>
+									<li><a href="/platforms">Platforms</a></li>
 									<li class="has-dropdown">
-										<a href="/pages">Pages <i class="fa-solid fa-chevron-down"></i></a>
+										<a href="/pages">Resources <i class="fa-solid fa-chevron-down"></i></a>
 										<ul class="submenu">
-											<li><a href="/service">Services</a></li>
-											<li><a href="/team">Team</a></li>
+											<li><a href="/service">Features</a></li>
 											<li><a href="/pricing">Pricing</a></li>
-											<li><a href="/faq">Our Faq</a></li>
+											<li><a href="/faq">FAQ</a></li>
+											<li><a href="/about">About Us</a></li>
+											<li><a href="/team">Team</a></li>
+											<li><a href="/blog">Blog</a></li>
 										</ul>
 									</li>
-									<li><a href="/blog">Blog</a></li>
+									<li><a href="/download" class="download-link">Download</a></li>
 									<li><a href="/contact">Contact</a></li>
 								</ul>
 							</nav>
@@ -127,7 +130,7 @@
 					</div>
 				</div>
 				<div class="header-right d-flex justify-content-end align-items-center">
-					<a href="/login" class="join-text"><img src="/assets/img/discord.svg" alt="img"> Join now</a>
+					<a href="/download" class="join-text"><i class="fa-regular fa-download"></i> Download</a>
 					<a href="#0" class="search-trigger search-icon" aria-label="Search"><i class="fa-regular fa-magnifying-glass"></i></a>
 					<div class="header__hamburger d-xl-block my-auto">
 						<div class="sidebar__toggle" role="button" aria-label="Toggle menu"><i class="fas fa-bars"></i></div>
