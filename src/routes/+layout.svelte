@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import Chatbot from '$lib/components/Chatbot.svelte';
 
 	let { children } = $props();
 </script>
@@ -157,6 +158,9 @@
 
 <!-- Main Content -->
 {@render children()}
+
+<!-- Chatbot -->
+<Chatbot />
 
 <!-- Footer -->
 <footer class="footer-section">

@@ -1,0 +1,7 @@
+inquisitivemind.tech {
+	reverse_proxy localhost:8080
+}
+
+www.inquisitivemind.tech {
+	reverse_proxy localhost:8080
+}

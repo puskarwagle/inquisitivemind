@@ -4,11 +4,11 @@
 		<div class="section-title text-center">
 			<h6 class="wow fadeInUp">
 				<img src="/assets/img/star.png" alt="img">
-				JobFlow Features
+				Our Services
 			</h6>
 			<h2 class="wow fadeInUp" data-wow-delay=".3s">
-				Everything you need to <br>
-				<span>automate your <b>job search</b></span>
+				Powerful digital solutions <br>
+				<span>tailored to your <b>business needs</b></span>
 			</h2>
 		</div>
 		<div class="row">
@@ -19,13 +19,19 @@
 					</div>
 					<div class="service-content">
 						<h3>
-							AI Cover Letter
-							Generation
+							AI-Powered CRM
+							Solutions
 						</h3>
 						<p>
-							Generate personalized, compelling cover letters tailored to each job posting. Our AI analyzes job descriptions and matches them with your resume to create perfect applications.
+							Highly customizable CRM platform tailored to your specific business needs. Features AI-enabled automation, intelligent suggestions, and multi-tenant architecture to streamline your customer relationships and boost productivity.
 						</p>
-						<a href="/pricing" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
+							<li>✓ Fully customizable workflows</li>
+							<li>✓ AI automation & suggestions</li>
+							<li>✓ Multi-tenant architecture</li>
+							<li>✓ Predictive analytics</li>
+						</ul>
+						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -36,13 +42,19 @@
 					</div>
 					<div class="service-content">
 						<h3>
-							Auto-Apply
-							Bot
+							E-Commerce
+							Platforms
 						</h3>
 						<p>
-							Automatically apply to hundreds of relevant jobs on LinkedIn, Indeed, and Seek. The bot fills out applications, uploads documents, and answers screening questions while you sleep.
+							Build powerful multi-tenant e-commerce solutions with AI assistant integration, smart product recommendations, and intelligent search capabilities. Perfect for businesses looking to scale their online presence.
 						</p>
-						<a href="/pricing" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
+							<li>✓ Multi-tenant support</li>
+							<li>✓ AI shopping assistant</li>
+							<li>✓ Smart product recommendations</li>
+							<li>✓ Intelligent search & filtering</li>
+						</ul>
+						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -53,13 +65,19 @@
 					</div>
 					<div class="service-content">
 						<h3>
-							Smart Resume
-							Builder
+							Website
+							Development
 						</h3>
 						<p>
-							Create professional, ATS-friendly resumes with our intelligent builder. Customize templates, optimize keywords, and generate job-specific versions instantly.
+							Professional website development services for businesses of all sizes. From landing pages to complex web applications, we build responsive, fast, and user-friendly digital experiences.
 						</p>
-						<a href="/pricing" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
+							<li>✓ Responsive design</li>
+							<li>✓ SEO optimized</li>
+							<li>✓ Modern UI/UX</li>
+							<li>✓ Custom functionality</li>
+						</ul>
+						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -70,13 +88,65 @@
 					</div>
 					<div class="service-content">
 						<h3>
-							Application
-							Tracking
+							Mobile App
+							Development
 						</h3>
 						<p>
-							Track all your applications in one centralized dashboard. Monitor status, set reminders for follow-ups, and analyze your success metrics over time.
+							Native and cross-platform mobile application development for iOS and Android. We create high-performance apps with modern design and seamless user experiences.
 						</p>
-						<a href="/pricing" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
+							<li>✓ iOS & Android support</li>
+							<li>✓ Cross-platform development</li>
+							<li>✓ Native performance</li>
+							<li>✓ API integrations</li>
+						</ul>
+						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
+				<div class="service-box-items">
+					<div class="service-image">
+						<img src="/assets/img/service/01.jpg" alt="img">
+					</div>
+					<div class="service-content">
+						<h3>
+							AI Agents
+							Development
+						</h3>
+						<p>
+							Custom AI agents designed to automate complex workflows and business processes. From data processing to decision-making, our agents learn and adapt to your specific needs.
+						</p>
+						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
+							<li>✓ Task automation</li>
+							<li>✓ Decision-making capabilities</li>
+							<li>✓ Natural language processing</li>
+							<li>✓ Multi-step workflows</li>
+						</ul>
+						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
+				<div class="service-box-items">
+					<div class="service-image">
+						<img src="/assets/img/service/02.jpg" alt="img">
+					</div>
+					<div class="service-content">
+						<h3>
+							Bot
+							Development
+						</h3>
+						<p>
+							Intelligent bots for customer engagement, automation, and support. Available 24/7 across multiple channels including web, Slack, Discord, Telegram, and more.
+						</p>
+						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
+							<li>✓ 24/7 availability</li>
+							<li>✓ Multi-channel support</li>
+							<li>✓ Natural conversations</li>
+							<li>✓ CRM integration</li>
+						</ul>
+						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -88,9 +158,9 @@
 <section class="cta-section-4 fix bg-cover" style="background-image: url('/assets/img/cta-bg.jpg');">
 	<div class="container">
 		<div class="cta-wrapper-4">
-			<h2 class="wow fadeInUp" data-wow-delay=".3s">Ready to transform your job search?</h2>
-			<a href="/pricing" class="theme-btn bg-white wow fadeInUp" data-wow-delay=".5s">
-				Download JobFlow <i class="fa-sharp fa-regular fa-arrow-down"></i>
+			<h2 class="wow fadeInUp" data-wow-delay=".3s">Ready to transform your business with AI?</h2>
+			<a href="/contact" class="theme-btn bg-white wow fadeInUp" data-wow-delay=".5s">
+				Get Started Today <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
 			</a>
 		</div>
 	</div>
@@ -111,11 +181,11 @@
 						<div class="section-title">
 							<h6 class="wow fadeInUp">
 								<img src="/assets/img/star.png" alt="img">
-								Why Choose JobFlow
+								Why Choose Inquisitive Mind
 							</h6>
 							<h2 class="wow fadeInUp" data-wow-delay=".3s">
 								The smartest way to <br>
-								<span>land your next <b>role</b></span>
+								<span>scale your <b>business</b></span>
 							</h2>
 						</div>
 						<div class="benefit-list">
@@ -124,9 +194,9 @@
 									<img src="/assets/img/icon/27.svg" alt="img">
 								</div>
 								<div class="content">
-									<h4>Save 11 Hours Per Week</h4>
+									<h4>AI-Powered Solutions</h4>
 									<p>
-										Stop spending hours copying and pasting. JobFlow automates repetitive tasks so you can focus on interview prep and networking.
+										Every solution we build integrates cutting-edge AI technology. From automation to intelligent suggestions, we help you work smarter, not harder.
 									</p>
 								</div>
 							</div>
@@ -135,9 +205,9 @@
 									<img src="/assets/img/icon/27.svg" alt="img">
 								</div>
 								<div class="content">
-									<h4>Apply to 10x More Jobs</h4>
+									<h4>Fully Customizable</h4>
 									<p>
-										The more applications you submit, the better your chances. JobFlow helps you apply to hundreds of relevant positions effortlessly.
+										No two businesses are alike. Our solutions are tailored to your specific needs, workflows, and goals. You get exactly what you need, nothing less.
 									</p>
 								</div>
 							</div>
@@ -146,9 +216,9 @@
 									<img src="/assets/img/icon/27.svg" alt="img">
 								</div>
 								<div class="content">
-									<h4>Privacy & Security First</h4>
+									<h4>End-to-End Support</h4>
 									<p>
-										Your data is encrypted and never shared. We use industry-standard security practices to protect your personal information and credentials.
+										From discovery to deployment and beyond, we're with you every step of the way. Our team ensures your success with ongoing support and maintenance.
 									</p>
 								</div>
 							</div>

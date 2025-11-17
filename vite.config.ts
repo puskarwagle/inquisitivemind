@@ -3,5 +3,17 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-	plugins: [tailwindcss(), sveltekit()]
+	plugins: [tailwindcss(), sveltekit()],
+	server: {
+		port: 8080,
+		host: '0.0.0.0',
+		hmr: {
+			clientPort: 443,
+			protocol: 'wss',
+			host: 'inquisitivemind.tech'
+		},
+		cors: {
+			origin: ['https://inquisitivemind.tech', 'https://www.inquisitivemind.tech']
+		}
+	}
 });
