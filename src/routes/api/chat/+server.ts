@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { DEEPSEEK_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 export const POST: RequestHandler = async ({ request }) => {
 	try {
@@ -10,19 +10,29 @@ export const POST: RequestHandler = async ({ request }) => {
 			return json({ error: 'Message is required' }, { status: 400 });
 		}
 
+		// Check if API key is configured
+		if (!env.DEEPSEEK_API_KEY) {
+			return json(
+				{
+					message: "Chat service is not configured. Please contact us at hello@inquisitivemind.tech for assistance."
+				},
+				{ status: 200 }
+			);
+		}
+
 		// Call DeepSeek API
 		const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
-				'Authorization': `Bearer ${DEEPSEEK_API_KEY}`
+				'Authorization': `Bearer ${env.DEEPSEEK_API_KEY}`
 			},
 			body: JSON.stringify({
 				model: 'deepseek-chat',
 				messages: [
 					{
 						role: 'system',
-						content: 'You are a helpful AI assistant for Inquisitive Mind, a web development and AI solutions company. We offer: 1) AI-Powered CRM Solutions, 2) E-Commerce Platforms, 3) Website Development, 4) Mobile App Development, 5) AI Agents Development, and 6) Bot Development. Help visitors learn about our services, answer questions, and guide them to contact us for custom solutions. Be friendly, professional, and concise.'
+						content: 'You are a helpful AI assistant for Inquisitive Mind Tech, a digital solutions and software development company. We offer: 1) AI & Automation Solutions, 2) Web & Mobile App Development, 3) Cloud & Server Management, and 4) Custom Software Development. Our products include JobQuest (job search automation), InqCRM (intelligent CRM), and AI Agents. Help visitors learn about our services, answer questions, and guide them to contact us. Be friendly, professional, and concise.'
 					},
 					{
 						role: 'user',

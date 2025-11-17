@@ -1,3 +1,85 @@
+<style>
+	.theme-btn.custom-cta-btn {
+		background-color: #000 !important;
+		color: #EFFB53 !important;
+		border: 2px solid #EFFB53 !important;
+	}
+
+	.theme-btn.custom-cta-btn:hover {
+		background-color: #EFFB53 !important;
+		color: #000 !important;
+		border: 2px solid #EFFB53 !important;
+		transform: translateY(-2px) !important;
+		box-shadow: 0 4px 8px rgba(239, 251, 83, 0.3) !important;
+	}
+
+	.theme-btn.custom-cta-btn:hover * {
+		color: #000 !important;
+	}
+
+	.theme-btn.custom-cta-btn:hover i {
+		color: #000 !important;
+	}
+
+	.service-box-items {
+		display: flex;
+		flex-direction: row;
+		height: 400px;
+		margin-bottom: 30px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.service-box-items .service-image {
+		flex: 1;
+		width: 50%;
+		height: 100%;
+	}
+
+	.service-box-items .service-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.service-box-items .service-content {
+		flex: 1;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		padding: 20px;
+	}
+
+	.service-box-items .service-content p {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+	}
+
+	.service-box-items .service-content ul {
+		overflow: hidden;
+	}
+
+	@media (max-width: 768px) {
+		.service-box-items {
+			flex-direction: column;
+			height: auto;
+		}
+
+		.service-box-items .service-image,
+		.service-box-items .service-content {
+			width: 100%;
+		}
+
+		.service-box-items .service-image {
+			height: 250px;
+		}
+	}
+</style>
+
 <!-- Service Section -->
 <section class="service-section style-padding fix section-padding bg-cover" style="background-image: url('/assets/img/service/Pattern.png');">
 	<div class="container">
@@ -7,8 +89,8 @@
 				Our Services
 			</h6>
 			<h2 class="wow fadeInUp" data-wow-delay=".3s">
-				Powerful digital solutions <br>
-				<span>tailored to your <b>business needs</b></span>
+				Intelligent digital solutions <br>
+				<span>that transform your <b>business</b></span>
 			</h2>
 		</div>
 		<div class="row">
@@ -19,17 +101,17 @@
 					</div>
 					<div class="service-content">
 						<h3>
-							AI-Powered CRM
+							AI & Automation
 							Solutions
 						</h3>
 						<p>
-							Highly customizable CRM platform tailored to your specific business needs. Features AI-enabled automation, intelligent suggestions, and multi-tenant architecture to streamline your customer relationships and boost productivity.
+							Smart systems that automate, optimize, and elevate your business with cutting-edge AI technology.
 						</p>
 						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
-							<li>✓ Fully customizable workflows</li>
-							<li>✓ AI automation & suggestions</li>
-							<li>✓ Multi-tenant architecture</li>
-							<li>✓ Predictive analytics</li>
+							<li>✓ AI agents & chatbots</li>
+							<li>✓ Workflow automation</li>
+							<li>✓ Predictive analytics & insights</li>
+							<li>✓ RAG & LLM-powered systems</li>
 						</ul>
 						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
 					</div>
@@ -42,17 +124,17 @@
 					</div>
 					<div class="service-content">
 						<h3>
-							E-Commerce
-							Platforms
+							Web & Mobile App
+							Development
 						</h3>
 						<p>
-							Build powerful multi-tenant e-commerce solutions with AI assistant integration, smart product recommendations, and intelligent search capabilities. Perfect for businesses looking to scale their online presence.
+							Scalable, responsive, and user-friendly applications built for performance and modern digital experiences.
 						</p>
 						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
-							<li>✓ Multi-tenant support</li>
-							<li>✓ AI shopping assistant</li>
-							<li>✓ Smart product recommendations</li>
-							<li>✓ Intelligent search & filtering</li>
+							<li>✓ Full-stack development</li>
+							<li>✓ Mobile & tablet apps</li>
+							<li>✓ API & microservice integration</li>
+							<li>✓ Modern UI/UX design</li>
 						</ul>
 						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
 					</div>
@@ -65,17 +147,17 @@
 					</div>
 					<div class="service-content">
 						<h3>
-							Website
-							Development
+							Cloud & Server
+							Management
 						</h3>
 						<p>
-							Professional website development services for businesses of all sizes. From landing pages to complex web applications, we build responsive, fast, and user-friendly digital experiences.
+							Reliable, secure, and optimized infrastructure for your digital success with 24/7 monitoring and support.
 						</p>
 						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
-							<li>✓ Responsive design</li>
-							<li>✓ SEO optimized</li>
-							<li>✓ Modern UI/UX</li>
-							<li>✓ Custom functionality</li>
+							<li>✓ Cloud setup & migration</li>
+							<li>✓ CI/CD pipeline automation</li>
+							<li>✓ Server scaling & monitoring</li>
+							<li>✓ Backup & disaster recovery</li>
 						</ul>
 						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
 					</div>
@@ -88,63 +170,17 @@
 					</div>
 					<div class="service-content">
 						<h3>
-							Mobile App
+							Custom Software
 							Development
 						</h3>
 						<p>
-							Native and cross-platform mobile application development for iOS and Android. We create high-performance apps with modern design and seamless user experiences.
+							Tailored software built to fit your goals—flexible, scalable, and future-ready enterprise solutions.
 						</p>
 						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
-							<li>✓ iOS & Android support</li>
-							<li>✓ Cross-platform development</li>
-							<li>✓ Native performance</li>
-							<li>✓ API integrations</li>
-						</ul>
-						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
-				<div class="service-box-items">
-					<div class="service-image">
-						<img src="/assets/img/service/01.jpg" alt="img">
-					</div>
-					<div class="service-content">
-						<h3>
-							AI Agents
-							Development
-						</h3>
-						<p>
-							Custom AI agents designed to automate complex workflows and business processes. From data processing to decision-making, our agents learn and adapt to your specific needs.
-						</p>
-						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
-							<li>✓ Task automation</li>
-							<li>✓ Decision-making capabilities</li>
-							<li>✓ Natural language processing</li>
-							<li>✓ Multi-step workflows</li>
-						</ul>
-						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
-				<div class="service-box-items">
-					<div class="service-image">
-						<img src="/assets/img/service/02.jpg" alt="img">
-					</div>
-					<div class="service-content">
-						<h3>
-							Bot
-							Development
-						</h3>
-						<p>
-							Intelligent bots for customer engagement, automation, and support. Available 24/7 across multiple channels including web, Slack, Discord, Telegram, and more.
-						</p>
-						<ul class="list-unstyled mt-3" style="font-size: 0.9rem;">
-							<li>✓ 24/7 availability</li>
-							<li>✓ Multi-channel support</li>
-							<li>✓ Natural conversations</li>
-							<li>✓ CRM integration</li>
+							<li>✓ Enterprise systems & SaaS platforms</li>
+							<li>✓ Database design & optimization</li>
+							<li>✓ Business process automation</li>
+							<li>✓ Consulting & technical support</li>
 						</ul>
 						<a href="/contact" class="link-btn">get started <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
 					</div>
@@ -159,7 +195,7 @@
 	<div class="container">
 		<div class="cta-wrapper-4">
 			<h2 class="wow fadeInUp" data-wow-delay=".3s">Ready to transform your business with AI?</h2>
-			<a href="/contact" class="theme-btn bg-white wow fadeInUp" data-wow-delay=".5s">
+			<a href="/contact" class="theme-btn custom-cta-btn wow fadeInUp" data-wow-delay=".5s">
 				Get Started Today <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
 			</a>
 		</div>

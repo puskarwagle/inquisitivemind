@@ -10,13 +10,17 @@
 	<div class="animation-preloader">
 		<div class="spinner"></div>
 		<div class="txt-loading">
-			<span data-text-preloader="J" class="letters-loading">J</span>
-			<span data-text-preloader="O" class="letters-loading">O</span>
-			<span data-text-preloader="B" class="letters-loading">B</span>
-			<span data-text-preloader="F" class="letters-loading">F</span>
-			<span data-text-preloader="L" class="letters-loading">L</span>
-			<span data-text-preloader="O" class="letters-loading">O</span>
-			<span data-text-preloader="W" class="letters-loading">W</span>
+			<span data-text-preloader="I" class="letters-loading">I</span>
+			<span data-text-preloader="N" class="letters-loading">N</span>
+			<span data-text-preloader="Q" class="letters-loading">Q</span>
+			<span data-text-preloader="U" class="letters-loading">U</span>
+			<span data-text-preloader="I" class="letters-loading">I</span>
+			<span data-text-preloader="S" class="letters-loading">S</span>
+			<span data-text-preloader="I" class="letters-loading">I</span>
+			<span data-text-preloader="T" class="letters-loading">T</span>
+			<span data-text-preloader="I" class="letters-loading">I</span>
+			<span data-text-preloader="V" class="letters-loading">V</span>
+			<span data-text-preloader="E" class="letters-loading">E</span>
 		</div>
 		<p class="text-center">Loading</p>
 	</div>
@@ -55,7 +59,7 @@
 					</div>
 				</div>
 				<p class="text d-none d-xl-block">
-					JobFlow automates your entire job search. Apply to hundreds of jobs with AI-generated cover letters, tailored resumes, and automated applications across LinkedIn, Indeed, and Seek.
+					Inquisitive Mind Tech delivers intelligent AI and automation solutions that transform the way businesses operate. From custom software development to cloud infrastructure, we build digital solutions that drive real growth.
 				</p>
 				<div class="mobile-menu fix mb-3"></div>
 				<div class="offcanvas__contact">
@@ -74,12 +78,12 @@
 							<div class="offcanvas__contact-text"><a href="#0">Join our Discord</a></div>
 						</li>
 						<li class="d-flex align-items-center">
-							<div class="offcanvas__contact-icon mr-15"><i class="far fa-download"></i></div>
-							<div class="offcanvas__contact-text"><a href="/download">Download JobFlow</a></div>
+							<div class="offcanvas__contact-icon mr-15"><i class="far fa-briefcase"></i></div>
+							<div class="offcanvas__contact-text"><a href="/service">Our Services</a></div>
 						</li>
 					</ul>
 					<div class="header-button mt-4">
-						<a href="/download" class="theme-btn text-center">Download Free</a>
+						<a href="/contact" class="theme-btn text-center">Get Started</a>
 					</div>
 					<div class="social-icon d-flex align-items-center">
 						<a href="#0" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -105,33 +109,30 @@
 							<img src="/assets/img/logo/white-logo.svg" alt="logo-img">
 						</a>
 					</div>
+				</div>
+				<div class="header-right d-flex justify-content-end align-items-center">
 					<div class="mean__menu-wrapper">
 						<div class="main-menu">
 							<nav id="mobile-menu">
 								<ul>
-									<li><a href="/">Home</a></li>
-									<li><a href="/how-it-works">How It Works</a></li>
-									<li><a href="/platforms">Platforms</a></li>
+									<li><a href="/jobquest">JobQuest</a></li>
+									<li><a href="/inqcrm">InqCRM</a></li>
+									<li><a href="/aiagents">AI Agents</a></li>
+									<li><a href="/pricing">Pricing</a></li>
 									<li class="has-dropdown">
-										<a href="/pages">Resources <i class="fa-solid fa-chevron-down"></i></a>
+										<a href="#0">Resources <i class="fa-solid fa-chevron-down"></i></a>
 										<ul class="submenu">
-											<li><a href="/service">Features</a></li>
-											<li><a href="/pricing">Pricing</a></li>
+											<li><a href="/service">Our Services</a></li>
+											<li><a href="/about">About</a></li>
 											<li><a href="/faq">FAQ</a></li>
-											<li><a href="/about">About Us</a></li>
 											<li><a href="/team">Team</a></li>
-											<li><a href="/blog">Blog</a></li>
+											<li><a href="/contact">Contact</a></li>
 										</ul>
 									</li>
-									<li><a href="/download" class="download-link">Download</a></li>
-									<li><a href="/contact">Contact</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
-				</div>
-				<div class="header-right d-flex justify-content-end align-items-center">
-					<a href="/download" class="join-text"><i class="fa-regular fa-download"></i> Download</a>
 					<a href="#0" class="search-trigger search-icon" aria-label="Search"><i class="fa-regular fa-magnifying-glass"></i></a>
 					<div class="header__hamburger d-xl-block my-auto">
 						<div class="sidebar__toggle" role="button" aria-label="Toggle menu"><i class="fas fa-bars"></i></div>

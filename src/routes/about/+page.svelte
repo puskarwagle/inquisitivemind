@@ -158,7 +158,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="brand-section section-padding pb-0">
+	<div class="brand-section section-padding pb-0" style="display: none;">
 		<div class="container">
 			<div class="swiper brand-slider">
 				<div class="swiper-wrapper">
